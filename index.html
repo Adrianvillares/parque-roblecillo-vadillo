@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenido a la Noche de Halloween</h1>
+        </header>
+        
+        <section class="content">
+            <p>Prepárate para una noche llena de sustos y emociones. ¿Te atreves a entrar?</p>
+            <button id="scareButton">¡Asústame!</button>
+        </section>
+
+        <div id="jumpScare">
+            <img src="juegaomuere.jpg" alt="Monstruo de Halloween">
+        </div>
+    </div>
+
+    <!-- Añadir el audio de fondo -->
+    <audio id="halloweenMusic" autoplay loop>
+        <source src="audio/halloweenmichael.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
