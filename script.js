@@ -1,18 +1,18 @@
 document.getElementById('scareButton').addEventListener('click', function() {
-    // Mostrar susto
     const jumpScareDiv = document.getElementById('jumpScare');
+    
+    // Mostrar el susto (se quedará visible hasta que el usuario haga clic en la imagen)
     jumpScareDiv.style.display = 'flex';
     
-    // Reproducir sonido de susto
-    let screamSound = new Audio('https://www.soundjay.com/button/beep-07.wav');
+    // Reproducir sonido espeluznante
+    let screamSound = new Audio('audio/halloweenmichael.mp3');
     screamSound.play();
+});
 
-    // Reproducir música de fondo
-    const bgMusic = document.getElementById('halloweenMusic');
-    bgMusic.play();
+// Agregar un evento de clic a la imagen para ocultar el susto
+document.getElementById('jumpScare').addEventListener('click', function() {
+    const jumpScareDiv = document.getElementById('jumpScare');
     
-    // Ocultar susto después de 3 segundos
-    setTimeout(() => {
-        jumpScareDiv.style.display = 'none';
-    }, 3000);
+    // Ocultar el susto al hacer clic en la imagen
+    jumpScareDiv.style.display = 'none';
 });

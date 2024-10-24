@@ -6,6 +6,60 @@
 }
 
 body {
+    background-image: url('juegaomuere.jpg'); /* Cambia a la imagen que has subido */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Nosifer', cursive; /* Fuente espeluznante */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    color: #fff; /* Color del texto en blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    background-image: url('juegaomuere.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Nosifer', cursive; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Para que el texto no desborde la pantalla */
+}
+
+/* Animación del título */
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+    animation: moveText 5s infinite alternate ease-in-out; /* Animación que dura 5 segundos, se repite indefinidamente */
+}
+
+/* Definición de la animación */
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    50% {
+        transform: translateX(0); /* Se centra en la pantalla */
+    }
+    100% {
+        transform: translateX(100%); /* Se mueve hacia la derecha y desaparece */
+    }
+}
+
+body {
     background-color: #0d0d0d;
     color: #ff751a;
     font-family: 'Creepster', 'Nosifer', cursive;
@@ -35,9 +89,9 @@ section p {
 
 button {
     padding: 10px 20px;
-    background-color: #ff751a;
+    background-color: #000000;
     border: none;
-    color: #fff;
+    color: #e2f109;
     font-size: 1.5rem;
     cursor: pointer;
     font-family: 'Creepster', cursive;
@@ -76,4 +130,83 @@ button:hover {
     100% {
         transform: scale(1);
     }
+}
+
+/* Estilo básico del botón */
+button {
+    background-color: #440000; /* Un color rojo oscuro de base */
+    color: #fff; /* Color del texto en blanco */
+    border: 2px solid #ff0000; /* Borde rojo brillante */
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Nosifer', cursive; /* Fuente espeluznante */
+    transition: all 0.4s ease; /* Transiciones suaves para el hover */
+    text-transform: uppercase; /* Para que el texto esté en mayúsculas */
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7); /* Sombra roja */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Animación del hover (cuando pasas el cursor) */
+button:hover {
+    background-color: #ff0000; /* Cambia el fondo a rojo brillante */
+    color: #000; /* El texto se vuelve negro */
+    border: 2px solid #ffffff; /* El borde cambia a blanco */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.9); /* Sombra blanca más intensa */
+    transform: scale(1.1); /* El botón se agranda ligeramente */
+}
+
+/* Efecto de sangre "goteante" en el hover */
+button::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 0, 0, 0.5);
+    transition: all 0.6s ease;
+    z-index: -1;
+    transform: rotate(45deg) translateX(-100%) translateY(-100%);
+}
+
+button:hover::before {
+    transform: rotate(45deg) translateX(0) translateY(0); /* Aparece el efecto en el hover */
+    background-color: rgba(255, 0, 0, 1); /* Fondo rojo sangre */
+}
+
+/* General */
+body {
+    background-color: #0b0b0b;
+    color: #00ff00;
+    font-family: 'Nosifer', cursive; /* Fuente viscosa */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Estilo de letras al estilo Goosebumps */
+.goosebumps-text {
+    font-size: 4rem;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000, 0px 5px 15px #00ff00;
+    color: #00ff00; /* Verde brillante que recuerda el logo de Goosebumps */
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Animación de texto que cambia el color cuando se pasa el mouse */
+.goosebumps-text:hover {
+    color: #ff0000; /* Cambia a rojo al pasar el mouse */
+    text-shadow: 2px 2px 8px #ff0000, 0px 5px 20px #ff0000;
 }
