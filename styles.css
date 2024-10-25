@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('juegaomuere.jpg'); /* Cambia a la imagen que has subido */
+    background-image: url('P6Hh.gif'); /* Cambia a la imagen que has subido */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -23,7 +23,7 @@ body {
 
 /* Estilos generales */
 body {
-    background-image: url('juegaomuere.jpg');
+    background-image: url('P6Hh.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

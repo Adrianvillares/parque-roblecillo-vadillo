@@ -5,7 +5,7 @@ document.getElementById('scareButton').addEventListener('click', function() {
     jumpScareDiv.style.display = 'flex';
     
     // Reproducir sonido espeluznante
-    let screamSound = new Audio('audio/halloweenmichael.mp3');
+    let screamSound = new Audio('audio/terror.mp3');
     screamSound.play();
 });
 
