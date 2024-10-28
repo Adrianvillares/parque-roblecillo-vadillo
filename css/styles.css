@@ -110,17 +110,17 @@ video {
     letter-spacing: 1px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-.goosebumps-text {
-    font-size: 2rem;
-    font-family: 'Nosifer', cursive;
+.letrahalloween {
+    font-size: 3rem;
+    font-family: 'Rubik Wet Paint', cursive;
     text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000, 0px 5px 15px #00ff00;
-    color: #00ff00; /* Verde brillante que recuerda el logo de Goosebumps */
+    color: #ee5209; /* Verde brillante que recuerda el logo de Goosebumps */
     letter-spacing: 1px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 /* Animación de texto que cambia el color cuando se pasa el mouse */
-.goosebumps-text:hover {
-    color: #ff0000; /* Cambia a rojo al pasar el mouse */
+.letrahalloween:hover {
+    color: #352e2e; /* Cambia a rojo al pasar el mouse */
     text-shadow: 2px 2px 8px #ff0000, 0px 5px 20px #ff0000;
 }
