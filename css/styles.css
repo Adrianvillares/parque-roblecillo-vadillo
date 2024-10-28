@@ -1,0 +1,144 @@
+body {
+    background-image: url('../img/personajehalloween.jpg'); /* Cambia a la imagen que has subido */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Nosifer', cursive; /* Fuente espeluznante */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    color: #fff; /* Color del texto en blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Para que el texto no desborde la pantalla */
+}
+
+/*
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+*/
+
+/* Animación del título */
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+    animation: moveText 5s infinite alternate ease-in-out; /* Animación que dura 5 segundos, se repite indefinidamente */
+}
+
+/* Definición de la animación */
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    50% {
+        transform: translateX(0); /* Se centra en la pantalla */
+    }
+    100% {
+        transform: translateX(100%); /* Se mueve hacia la derecha y desaparece */
+    }
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    color: #e2f109;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de sangre "goteante" en el hover */
+button:hover {
+    background-color:#ff0000;
+}
+
+.hidden {
+    display: none;
+}
+
+#videoContainer {
+   margin-top: 20px;
+    /* width: 56.25vh;  
+    height: 100vh;  
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+
+/*tamaño foto*/
+img {
+    width: 100%;
+    
+    height: auto;
+}
+
+/*tamaño vídeo*/
+video {
+    width: 100%;  /* Ajustar el video al ancho del contenedor */
+    height: 100%; /* Ajustar el video a la altura del contenedor */
+    object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
+}
+
+/*botón volver a inicio*/
+
+#closeImageButton {
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    color: #e2f109;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#closeImageButton:hover {
+    background-color: #c82333;
+}
+
+/* Estilo de letras al estilo Goosebumps */
+.goosebumps-text-1 {
+    font-size: 4rem;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000, 0px 5px 15px #00ff00;
+    color: #00ff00; /* Verde brillante que recuerda el logo de Goosebumps */
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.goosebumps-text {
+    font-size: 2rem;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000, 0px 5px 15px #00ff00;
+    color: #00ff00; /* Verde brillante que recuerda el logo de Goosebumps */
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Animación de texto que cambia el color cuando se pasa el mouse */
+.goosebumps-text:hover {
+    color: #ff0000; /* Cambia a rojo al pasar el mouse */
+    text-shadow: 2px 2px 8px #ff0000, 0px 5px 20px #ff0000;
+}

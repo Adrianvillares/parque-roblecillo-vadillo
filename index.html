@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halloween</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>JUEGA O MUERE</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> <!-- Fuente similar al estilo viscoso -->
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="icon" href="fantasma.png" type="image/png">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Bienvenido a la Noche de Halloween</h1>
-        </header>
-        
-        <section class="content">
-            <p>Prepárate para una noche llena de sustos y emociones. ¿Te atreves a entrar?</p>
-            <button id="scareButton">¡Asústame!</button>
-        </section>
+        <div class="content">
+            <h1 class="goosebumps-text-1">JUEGA O MUERE</h1>
+            <p class="goosebumps-text">Jugaré, no abandonaré</p>
+    
+            <button id="playVideoButton">CONTINUAR</button>
+        </div>
 
-        <div id="jumpScare">
-            <img src="halloween-parque-roblecillo.jpg" alt="Monstruo de Halloween">
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="video/halloween.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">PISTA</button>
+        </div>
+
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/halloween-parque-roblecillo.jpg" alt="Imagen">
+            <button id="closeImageButton">UBICACIÓN</button>
         </div>
     </div>
 
-    <!-- Añadir el audio de fondo -->
-    <audio id="halloweenMusic" autoplay loop>
-        <source src="audio/terror.mp3" type="audio/mpeg">
-    </audio>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
