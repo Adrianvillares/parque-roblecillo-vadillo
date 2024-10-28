@@ -101,24 +101,6 @@ video {
     object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
 }
 
-/*botón volver a inicio*/
-
-#closeImageButton {
-    padding: 10px 20px;
-    background-color: #000000;
-    border: none;
-    color: #e2f109;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-family: 'Creepster', cursive;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#closeImageButton:hover {
-    background-color: #c82333;
-}
-
 /* Estilo de letras al estilo Goosebumps */
 .goosebumps-text-1 {
     font-size: 4rem;
