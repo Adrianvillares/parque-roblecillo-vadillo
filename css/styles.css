@@ -53,7 +53,7 @@ p {
 
 button {
     padding: 10px 20px;
-    background-color: #000000;
+    background-color: #776969;
     border: none;
     color: #e2f109;
     font-size: 1.5rem;
@@ -65,7 +65,7 @@ button {
 
 /* Efecto de sangre "goteante" en el hover */
 button:hover {
-    background-color:#ff0000;
+    background-color:#d41717;
 }
 
 .hidden {
