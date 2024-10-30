@@ -125,3 +125,11 @@ video {
     color: #352e2e; /* Cambia a rojo al pasar el mouse */
     text-shadow: 2px 2px 8px #ff0000, 0px 5px 20px #ff0000;
 }
+
+@media (max-width: 768px) {
+    .fixed-code {
+      font-size: 14px; /* Tamaño de fuente ajustado para móviles */
+      padding: 5px;
+    }
+  }
+  
